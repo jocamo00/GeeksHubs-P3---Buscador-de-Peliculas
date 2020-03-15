@@ -1,0 +1,89 @@
+body {
+    background-color: yellow;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: blue;
+
+}
+
+/* Barra de navegación */
+.contenedor-navegacion {
+    margin-top: 1rem;
+}
+/* Fin barra de navegación */
+
+
+/* Cabecera */
+.contenedor-cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-color:  red;
+    flex-wrap: wrap;
+}
+
+.jose {
+    background-color: blue;
+    height: 5rem;
+}
+/* Fin cabecera */
+
+
+/* Buscador de peliculas */
+.container-search {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.buscador {
+    height: 3rem;
+    padding: 0px;
+}
+
+.al-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.input-search {
+    width: 100vw;
+}
+/* Fin buscador de peliculas */
+
+
+/* Card */
+.contenido-card {
+    display: flex;
+}
+
+.info-card {
+    
+}
+
+/* Fin card */
+
+
+.contenedor-contenido {
+    margin-top: 2rem;
+}
+.prueba {
+    background-color: darksalmon;
+}
+
+
+
+
+footer{
+    background-color: black;
+    height: 10px;   
+}
+
