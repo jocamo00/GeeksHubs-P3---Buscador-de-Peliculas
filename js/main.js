@@ -1,9 +1,13 @@
 /********* MOSTRAR PELICULAS POR NOMBRE *************/
-function buscar() {
-    let inputSearch = document.getElementById("input-search").value;
-    let rutaImg = "https://image.tmdb.org/t/p/w300_and_h450_bestv2/";
 
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=7f8494efa25bfa40d25abdd2fd435c69&language=en-US&query=${inputSearch}&page=1&include_adult=false`)
+    let inputSearch = document.getElementById("input-search");
+
+    inputSearch.addEventListener("keyup", function(){
+            let peli = this.value;
+
+            let rutaImg = "https://image.tmdb.org/t/p/w300_and_h450_bestv2/";
+
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=7f8494efa25bfa40d25abdd2fd435c69&language=en-US&query=${peli}&page=1&include_adult=false`)
     .then(res => res.json())
     .then(data => {
 
@@ -30,8 +34,11 @@ function buscar() {
     
         console.log(inputSearch);
         console.log(pelicula);
-    });  
-}  
+    }); 
+        });
+
+     
+ 
 /********* FIN MOSTRAR PELICULAS POR NOMBRE *************/
 
 
