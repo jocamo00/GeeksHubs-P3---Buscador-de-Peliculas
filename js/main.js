@@ -1,17 +1,17 @@
 /********* MOSTRAR PELICULAS POR NOMBRE *************/
+function buscar(){
 
-    let inputSearch = document.getElementById("input-search");
+    let inputSearch = document.getElementById("input-search").value;
+    let btnSearch = document.getElementById("btn-search");
 
-    inputSearch.addEventListener("keyup", function(){
-            let peli = this.value;
+    let rutaImg = "https://image.tmdb.org/t/p/w300_and_h450_bestv2/";
 
-            let rutaImg = "https://image.tmdb.org/t/p/w300_and_h450_bestv2/";
-
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=7f8494efa25bfa40d25abdd2fd435c69&language=en-US&query=${peli}&page=1&include_adult=false`)
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=7f8494efa25bfa40d25abdd2fd435c69&language=en-US&query=${inputSearch}&page=1&include_adult=false`)
     .then(res => res.json())
     .then(data => {
 
         const pelicula = data.results;
+        
 
         for(let i = 0; i < pelicula.length; i++){
 
@@ -25,36 +25,41 @@
                         <div class="info-card col-sm-12 col-md-7 col-lg-7">
                             <p class="card-title title-card">${pelicula[i].original_title}</p>
                             <p class="card-text description-card">${pelicula[i].overview}</p>
-                            <p class="card-text">${pelicula[i].popularity}</p>
+                            <p class="card-text">${pelicula[i].genre_ids}</p>
+                            <button id="btn-trailer" class="btn-trailer" onclick="trailer()">Trailer</button>
                         </div>
                     </div>
                 </div>`;  
-            
         } 
+
+        /* for(let j = 0; genres.length; j++){
+            console.log(genres[j].id);
+        }  */
     
         console.log(inputSearch);
         console.log(pelicula);
-    }); 
-        });
+    });
 
+    } 
      
+        
  
 /********* FIN MOSTRAR PELICULAS POR NOMBRE *************/
 
 
 
 /********* MOSTRAR TRAILER *************/
-/* function trailer(){
+function trailer(){
 
-    var div1 = document.getElementByTagName('button').value;
-    console.log(div1);
-    //var value = div1.getAttribute("value");
+    var div1 = document.getElementById('btn-trailer');
+    /* console.log(div1);
+    var value = div1.getAttribute("value");  */
     //let a = document.getElementsById("idValor0");//et b = a.getAttribute("value");
     //let c =  document.getElementById(b);
     //var idv = c.getAttribute("value");
    // console.log(value);
   
-    fetch(`https://api.themoviedb.org/3/movie/${value}/videos?api_key=7f8494efa25bfa40d25abdd2fd435c69`)
+    fetch(`https://api.themoviedb.org/3/movie/454626/videos?api_key=7f8494efa25bfa40d25abdd2fd435c69`)
         .then(res => res.json())    
         .then(data => {
   
@@ -64,7 +69,7 @@
   
             console.log(popular);
     });  
-}  */
+}  
 /********* FIN MOSTRAR TRAILER *************/
 
 
