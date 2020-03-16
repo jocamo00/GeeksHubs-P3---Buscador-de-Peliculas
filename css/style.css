@@ -5,17 +5,6 @@ body {
     flex-direction: column;
 }
 
-nav {
-    background-color: blue;
-
-}
-
-/* Barra de navegación */
-.contenedor-navegacion {
-    margin-top: 1rem;
-}
-/* Fin barra de navegación */
-
 
 /* Cabecera */
 .contenedor-cabecera {
@@ -25,11 +14,6 @@ nav {
     height: 20rem;
     background-color:  red;
     flex-wrap: wrap;
-}
-
-.jose {
-    background-color: blue;
-    height: 5rem;
 }
 /* Fin cabecera */
 
@@ -62,22 +46,47 @@ nav {
 
 /* Card */
 .contenido-card {
+    background-color: deeppink;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-between;
+    border: 1px solid black;
+    min-height: 35rem;
+    max-height: 35rem;
+}
+
+.img-card {
+    display: flex;
+    align-items: center;
 }
 
 .info-card {
-    
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+.title-card {
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: x-large;
+    color: blue;
+}
+
+.description-card {
+    text-align: justify;
+    padding: 1rem;
+}
 /* Fin card */
 
 
 .contenedor-contenido {
     margin-top: 2rem;
 }
-.prueba {
-    background-color: darksalmon;
-}
+
 
 
 

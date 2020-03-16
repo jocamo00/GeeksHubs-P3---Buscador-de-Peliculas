@@ -13,46 +13,18 @@ function buscar() {
 
             document.getElementById("contenido").innerHTML +=
 
-                <div class="col-4">
+                `<div class="col-md-12 col-lg-6 col-xl-6">
                     <div class="contenido-card">
-                        <img></img>
-                        <div class="info-card">
-                            
+                        <div class="img-card col-sm-12 col-md-5 col-lg-5">
+                            <img class="d-block w-100 img-card" src="${rutaImg}${pelicula[i].poster_path}"></img>
                         </div>
-
+                        <div class="info-card col-sm-12 col-md-7 col-lg-7">
+                            <p class="card-title title-card">${pelicula[i].original_title}</p>
+                            <p class="card-text description-card">${pelicula[i].overview}</p>
+                            <p class="card-text">${pelicula[i].popularity}</p>
+                        </div>
                     </div>
-                    
-                </div>;  
-
-
-
-
-
-
-                {/* <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="${rutaImg}${pelicula[i].poster_path}" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">${pelicula[i].original_title}</h5>
-                                    <p class="card-text">${pelicula[i].overview}</p>
-                                    <p class="card-text">${pelicula[i].popularity}</p>
-                                </div>
-                        </div>
-                        </div>
-                    </div> */}
-
-            
-            {/* document.getElementById("contenido").innerHTML += `<div id="elemento${[i]}">
-                <img src="${rutaImg}${pelicula[i].poster_path}"> 
-                <p id="idValor${[i]}" value="${pelicula[i].id}" class="classId"></p>
-                <p>${pelicula[i].original_title}</p>
-                <p>${pelicula[i].popularity}</p>
-                <p>${pelicula[i].overview}</p>
-                <button id="btn${[i]}" onclick="trailer()">Trailer</button>
-            </div>`; */}  
+                </div>`;  
             
         } 
     
