@@ -42,6 +42,11 @@ body {
 .input-search {
     width: 100vw;
 }
+
+.btn-search {
+    background-color: black;
+    color: white;
+}
 /* Fin buscador de peliculas */
 
 
@@ -93,13 +98,21 @@ body {
 .genero-card {
     color: white;
 }
-
 /* Fin card */
 
+.volver {
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
 
+.img-volver {
+    width: 5rem;
+    height: 5rem;
+}
 .contenedor-contenido {
     margin-top: 2rem;
 }
+
 
 
 
