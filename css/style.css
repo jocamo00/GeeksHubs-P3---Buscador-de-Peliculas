@@ -2,6 +2,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 
@@ -26,6 +27,8 @@ body {
 }
 
 .buscador {
+    display: flex;
+    justify-content: center;
     height: 3rem;
     padding: 0px;
 }
@@ -51,10 +54,15 @@ body {
     justify-content: space-between;
     min-height: 35rem;
     max-height: 35rem;
+   
 }
 
 .contenido-card:hover {
-    border: 1px solid black;
+    border-top: 1px solid #444;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #333;
+    background: #222;
 }
 
 .img-card {
@@ -73,19 +81,19 @@ body {
     padding-top: 2.5rem;
     text-align: center;
     font-size: x-large;
-    color: black;
+    color: white;
 }
 
 .description-card {
     text-align: justify;
     padding: 1rem;
+    color: white;
 }
 
-.btn-trailer {
-    margin-top: 6rem;
-    width: 10rem;
-    height: 2rem;
+.genero-card {
+    color: white;
 }
+
 /* Fin card */
 
 
@@ -97,8 +105,5 @@ body {
 
 
 
-footer{
-    background-color: black;
-    height: 10px;   
-}
+
 
