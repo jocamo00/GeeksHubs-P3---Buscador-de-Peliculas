@@ -79,7 +79,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=7f8494efa25bfa40d25abd
                         <div class="info-card col-sm-12 col-md-7 col-lg-7">
                             <p class="card-title title-card">${popular[j].original_title}</p>
                             <p class="card-text description-card">${popular[j].overview}</p>
-                            <p class="card-text genero-card">${popular[j].popularity}</p>
+                            <p class="card-text popular-card">⭐️${popular[j].popularity}</p>
                             
                         </div>
                     </div>

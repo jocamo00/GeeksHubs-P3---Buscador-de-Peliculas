@@ -47,6 +47,17 @@ body {
     background-color: black;
     color: white;
 }
+
+.text-populares {
+    color: rgb(255,206,107);
+    font-size: x-large;
+}
+
+.container-populares {
+    direction: flex;
+    justify-content: start;
+}
+
 /* Fin buscador de peliculas */
 
 
@@ -97,6 +108,11 @@ body {
 
 .genero-card {
     color: white;
+}
+
+.popular-card {
+    color: rgb(255,206,107);
+    font-size: xx-large;
 }
 /* Fin card */
 
